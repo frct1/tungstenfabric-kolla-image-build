@@ -2,8 +2,8 @@
 
 
 {% block nova_compute_footer %}
-RUN git clone https://github.com/Juniper/contrail-dev-controller.git \
-    && python3 -m pip --no-cache-dir install --no-compile contrail-dev-controller/src/vnsw/contrail-vrouter-api \
+RUN git clone https://github.com/baikov-ilia/tf-vrouter-api.git \
+    && python3 -m pip --no-cache-dir install --no-compile tf-vrouter-api \
     && git clone https://github.com/tungstenfabric/tf-nova-vif-driver.git \
     && python3 -m pip --no-cache-dir install --no-compile tf-nova-vif-driver/
 {% endblock %}
