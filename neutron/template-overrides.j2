@@ -1,0 +1,7 @@
+{% extends parent_template %}
+
+
+{% block neutron_server_footer %}
+ADD plugins-archive /
+python3 -m pip --no-cache-dir install /plugins/*
+{% endblock %}
